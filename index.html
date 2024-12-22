@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Termiz davlat pedagogika instituti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="yudev, yudev portfolio, yuldosh, Yuldosh Aminov" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, yudev, Yuldosh Aminov, portfolio" />
+    <meta name="author" content="Yuldosh Aminov" />
+    <link rel="shortcut icon" href="img/logo.png">
+    
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <div class="wraper">
+        <div class="modal">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <h2>Termiz davlat pedagogika instituti</h2>
+            <input type="text" id="login" placeholder="Login" />
+            <input type="password" id="password" placeholder="Parol" />
+            <button onclick="handleLogin()">Kirish</button>
+            <p class="error" id="error">Login yoki parol noto'g'ri!</p>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin() {
+            const login = document.getElementById('login').value;
+            const password = document.getElementById('password').value;
+            const error = document.getElementById('error');
+
+            // Check login and password
+            if (login === 'Terdpi' && password === '2024') {
+                window.location.href = 'blog_item.html'; // Redirect to index page
+            } else {
+                error.style.display = 'block'; // Show error message
+            }
+        }
+    </script>
+</body>
+</html>
